@@ -15,3 +15,5 @@ function Business(props) {
         </>
     );
 }
+
+export default Business;
