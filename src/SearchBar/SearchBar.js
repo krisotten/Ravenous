@@ -4,8 +4,8 @@ import styles from './SearchBar.module.css'
 function SearchBar(props) {
     return (
         <>
-            <div>
-                <p>ravenous</p>
+            <div className={styles.bar}>
+                <p classNmae={styles.ravenous}>ravenous</p>
             </div>
         </>
     )
