@@ -37,21 +37,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+    gap: 40px;
 }
 
-/* Filters and Search Bars */
+/* Filters */
 
 .filters {
     display: flex;
     flex-flow: row nowrap;
     color: white;
     font-weight: bold;
-    gap: 175px;
-    padding: 0px 75px;
+    gap: 150px;
+    padding: 0px 50px;
     border-bottom: 1px solid white;
 }
 
 .filter {
     text-align: center;
+}
+
+/* Search Bars */
+
+.searchBars {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+}
+
+.searchBar {
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
 }
 

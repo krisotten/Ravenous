@@ -13,6 +13,10 @@ function SearchBar(props) {
                     <p className={styles.filter}>Highest <br /> Rated</p>
                     <p className={styles.filter}>Most <br /> Reviewed</p>
                 </div>
+                <div className={styles.searchBars}>
+                    <input type="text" className={styles.searchBar} placeholder='Search Businesses'/>
+                    <input type="text" className={styles.searchBar} placeholder='Where?'/>
+                </div>
             </div>
         </>
     )
