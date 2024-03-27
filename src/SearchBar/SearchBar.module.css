@@ -34,6 +34,9 @@
     background-image: url('https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/background_search_desktop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Filters and Search Bars */
@@ -41,4 +44,14 @@
 .filters {
     display: flex;
     flex-flow: row nowrap;
+    color: white;
+    font-weight: bold;
+    gap: 175px;
+    padding: 0px 75px;
+    border-bottom: 1px solid white;
 }
+
+.filter {
+    text-align: center;
+}
+

@@ -9,9 +9,9 @@ function SearchBar(props) {
             </div>
             <div className={styles.searchDiv}>
                 <div className={styles.filters}>
-                    <p>Best Match</p>
-                    <p>Highest Rated</p>
-                    <p>Most Reviewed</p>
+                    <p className={styles.filter}>Best <br /> Match</p>
+                    <p className={styles.filter}>Highest <br /> Rated</p>
+                    <p className={styles.filter}>Most <br /> Reviewed</p>
                 </div>
             </div>
         </>
