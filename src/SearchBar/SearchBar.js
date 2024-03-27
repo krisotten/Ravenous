@@ -7,7 +7,7 @@ function SearchBar(props) {
             <div className={styles.bar}>
                 <p className={styles.ravenous}>ravenous</p>
             </div>
-            <div className={searchDiv}>
+            <div className={styles.searchDiv}>
 
             </div>
         </>

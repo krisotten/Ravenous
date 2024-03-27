@@ -30,6 +30,8 @@
 /* Search Bar Background Image */
 
 .searchDiv {
-    height: 300px;
-    background-image: 'ravenous.jpeg';
+    height: 400px;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/background_search_desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
