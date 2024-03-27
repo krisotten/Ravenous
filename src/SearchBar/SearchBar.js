@@ -5,7 +5,7 @@ function SearchBar(props) {
     return (
         <>
             <div className={styles.bar}>
-                <p classNmae={styles.ravenous}>ravenous</p>
+                <p className={styles.ravenous}>ravenous</p>
             </div>
         </>
     )
