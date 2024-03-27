@@ -26,3 +26,9 @@
     color: white;
     font-size: 25px;
 }
+
+/* Search Bar Background Image */
+
+.searchDiv {
+    height: 300px;
+}
