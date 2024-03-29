@@ -17,6 +17,7 @@ function SearchBar(props) {
                     <input type="text" className={styles.searchBar} placeholder='Search Businesses'/>
                     <input type="text" className={styles.searchBar} placeholder='Where?'/>
                 </div>
+                <button className={styles.button}>Let's Go</button>
             </div>
         </>
     )
