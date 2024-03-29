@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './SearchBar.module.css'
 
 function SearchBar(props) {
-    const [filter, setFilter] = useState();
-    const [search, setSearch] = useState();
-    const [location, seLocation] = useState();
+    const [filter, setFilter] = useState(null);
+    const [search, setSearch] = useState(null);
+    const [location, seLocation] = useState(null);
+
+    function handleSearchChange(e) {
+        setSearch(e.target.value);
+    }
 
     return (
         <>
@@ -18,7 +22,7 @@ function SearchBar(props) {
                     <p className={styles.filter}>Most <br /> Reviewed</p>
                 </div>
                 <div className={styles.searchBars}>
-                    <input type="text" className={styles.searchBar} placeholder='Search Businesses'/>
+                    <input type="text" className={styles.searchBar} placeholder='Search Businesses' onChange={handleSearchChange} value={search}/>
                     <input type="text" className={styles.searchBar} placeholder='Where?'/>
                 </div>
                 <button className={styles.button}>Let's Go</button>
