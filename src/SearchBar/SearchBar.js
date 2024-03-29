@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './SearchBar.module.css'
 
 function SearchBar(props) {
+    const [filter, setFilter] = useState();
+    const [search, setSearch] = useState();
+    const [location, seLocation] = useState();
+
     return (
         <>
             <div className={styles.bar}>
