@@ -1,5 +1,5 @@
 import SearchBar from './SearchBar/SearchBar.js';
-import Business from './Business/Business.js'
+import BusinessList from './BusinessList/BusinessList.js';
 
 function App() {
   const business = {
@@ -14,12 +14,14 @@ function App() {
     reviews: '11'
   };
 
+  const list = Array(9).fill(business);
+
   return (
     <div>
       <header>
         <SearchBar />
       </header>
-      <Business info={business} />
+      <BusinessList list={list} />
     </div>
   );
 }
