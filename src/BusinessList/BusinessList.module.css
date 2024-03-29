@@ -1,0 +1,9 @@
+/* STYLES FOR BUSINESS LIST */
+
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 100px;
+    margin: 75px 200px;
+    justify-content: center;
+}
