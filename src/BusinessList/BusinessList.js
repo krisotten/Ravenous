@@ -10,3 +10,5 @@ function BusinessList(props) {
         </div>
     )
 }
+
+export default BusinessList;
