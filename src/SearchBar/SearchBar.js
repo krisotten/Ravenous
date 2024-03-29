@@ -4,10 +4,14 @@ import styles from './SearchBar.module.css'
 function SearchBar(props) {
     const [filter, setFilter] = useState(null);
     const [search, setSearch] = useState(null);
-    const [location, seLocation] = useState(null);
+    const [location, setLocation] = useState(null);
 
     function handleSearchChange(e) {
         setSearch(e.target.value);
+    }
+
+    function handleLocationChange(e) {
+        setLocation(e.target.value);
     }
 
     return (
@@ -23,7 +27,7 @@ function SearchBar(props) {
                 </div>
                 <div className={styles.searchBars}>
                     <input type="text" className={styles.searchBar} placeholder='Search Businesses' onChange={handleSearchChange} value={search}/>
-                    <input type="text" className={styles.searchBar} placeholder='Where?'/>
+                    <input type="text" className={styles.searchBar} placeholder='Where?' onChange={handleLocationChange} value={location}/>
                 </div>
                 <button className={styles.button}>Let's Go</button>
             </div>
