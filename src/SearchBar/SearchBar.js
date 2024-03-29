@@ -13,6 +13,12 @@ function SearchBar(props) {
     function handleLocationChange(e) {
         setLocation(e.target.value);
     }
+    
+    function handleFilterChange(e) {
+        var newFilter = e.target.innerHTML;
+        newFilter = newFilter.replace(' <br>', '');
+        setFilter(newFilter);
+    }
 
     return (
         <>
@@ -21,9 +27,9 @@ function SearchBar(props) {
             </div>
             <div className={styles.searchDiv}>
                 <div className={styles.filters}>
-                    <p className={styles.filter}>Best <br /> Match</p>
-                    <p className={styles.filter}>Highest <br /> Rated</p>
-                    <p className={styles.filter}>Most <br /> Reviewed</p>
+                    <p className={filter==='Best Match' ? styles.filterActive : styles.filter} onClick={handleFilterChange} >Best <br /> Match</p>
+                    <p className={filter==='Highest Rated' ? styles.filterActive : styles.filter} onClick={handleFilterChange}>Highest <br /> Rated</p>
+                    <p className={filter==='Most Reviewed' ? styles.filterActive : styles.filter} onClick={handleFilterChange}>Most <br /> Reviewed</p>
                 </div>
                 <div className={styles.searchBars}>
                     <input type="text" className={styles.searchBar} placeholder='Search Businesses' onChange={handleSearchChange} value={search}/>

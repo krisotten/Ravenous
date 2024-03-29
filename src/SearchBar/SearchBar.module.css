@@ -48,13 +48,22 @@
     flex-flow: row nowrap;
     color: white;
     font-weight: bold;
-    gap: 150px;
-    padding: 0px 50px;
-    border-bottom: 1px solid white;
+    /* gap: 150px; */
+    /* padding: 0px 50px; */
+    /* border-bottom: 1px solid white; */
 }
 
 .filter {
     text-align: center;
+    border-bottom: 1px solid white;
+    padding: 0px 70px 6px;
+}
+
+.filterActive {
+    text-align: center;
+    padding: 0px 70px 6px;
+    color: #d4af37;
+    border-bottom: 1px solid #d4af37;
 }
 
 /* Search Bars */
