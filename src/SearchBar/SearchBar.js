@@ -20,6 +20,10 @@ function SearchBar(props) {
         setFilter(newFilter);
     }
 
+    function handleButtonClick(e) {
+        console.log(`Searching Yelp with ${search}, ${location}, ${filter}`);
+    }
+
     return (
         <>
             <div className={styles.bar}>
@@ -35,7 +39,7 @@ function SearchBar(props) {
                     <input type="text" className={styles.searchBar} placeholder='Search Businesses' onChange={handleSearchChange} value={search}/>
                     <input type="text" className={styles.searchBar} placeholder='Where?' onChange={handleLocationChange} value={location}/>
                 </div>
-                <button className={styles.button}>Let's Go</button>
+                <button className={styles.button} onClick={handleButtonClick}>Let's Go</button>
             </div>
         </>
     )
