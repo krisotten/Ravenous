@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from './SearchBar.module.css';
 import yelpSearch from '../utils/api.js';
+import App from '../App.js';
 
 function SearchBar(props) {
     const [filter, setFilter] = useState(null);
@@ -25,7 +26,7 @@ function SearchBar(props) {
 
     function handleButtonClick(e) {
         console.log(`Searching Yelp with ${search}, ${location}, ${filter}`);
-        console.log(yelpSearch(search, location, filter));
+        yelpSearch(search, location, filter);
     }
 
     return (
